@@ -1,29 +1,29 @@
 import Input from "../shared/ui/input.component";
+import React from "react";
+
 import { InputStore } from "../shared/store";
+import { observer } from "mobx-react";
 import { Envelope } from "phosphor-react";
-import { useRef } from "react";
 
-type Interface = {
+interface PasswordInputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   store: InputStore;
-} & React.InputHTMLAttributes<HTMLInputElement>;
+}
 
-const EmailInput: React.FC<Interface> = ({ store, ...props }) => {
-  const inputRef = useRef<HTMLInputElement>(null);
+const PasswordInput: React.FC<PasswordInputProps> = ({ store, ...props }) => {
+  const inputRef = React.createRef<HTMLInputElement>();
+  const iconRef = React.createRef<HTMLButtonElement>();
+
   return (
-    <div
-      className="flex w-full max-w-[400px] items-center justify-start gap-2 overflow-hidden rounded-2xl pl-4"
-      onClick={() => inputRef.current?.focus()}
-    >
-      <Envelope className="icon" size={24} />
-      <Input
-        {...props}
-        inputRef={inputRef}
-        className="input no-outline bg-transparent"
-        placeholder={store.placeholder}
-        type={store.type}
-      />
-    </div>
+    <Input
+      {...props}
+      Icon={Envelope}
+      onClickIcon={() => inputRef.current?.focus()}
+      iconRef={iconRef}
+      inputRef={inputRef}
+      type={"email"}
+    />
   );
 };
 
-export default EmailInput;
+export default observer(PasswordInput);
