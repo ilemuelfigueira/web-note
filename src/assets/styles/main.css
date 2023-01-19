@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: green;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background: none;
+  letter-spacing: 0.5px;
+
+  box-sizing: border-box;
+}
+
+@layer base {
+  h1 {
+    @apply text-[2.2rem];
+    @apply whitespace-nowrap;
+  }
+
+  h2 {
+    @apply font-bold;
+    @apply text-[2rem];
+    @apply whitespace-nowrap;
+  }
+
+  h3 {
+    @apply text-[1.8rem];
+    @apply whitespace-nowrap;
+  }
+
+  h4 {
+    @apply text-[1.6rem];
+    @apply whitespace-nowrap;
+  }
+
+  h5 {
+    @apply font-normal;
+    @apply text-[1.5rem];
+    @apply whitespace-nowrap;
+  }
+
+  h6 {
+    @apply font-normal;
+    @apply text-[1.4rem];
+    @apply whitespace-nowrap;
+  }
+
+  p {
+    @apply text-[1.2rem];
+  }
+}
