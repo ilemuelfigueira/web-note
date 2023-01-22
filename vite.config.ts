@@ -23,6 +23,8 @@ export default defineConfig({
       { find: '@features', replacement: path.resolve(__dirname, 'src/features') },
       { find: '@stores', replacement: path.resolve(__dirname, 'src/stores') },
       { find: '@core', replacement: path.resolve(__dirname, 'src/core') },
+      { find: '@ui', replacement: path.resolve(__dirname, 'src/ui') },
+      { find: '@stores', replacement: path.resolve(__dirname, 'src/stores') },
     ],
   }
 })
