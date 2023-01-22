@@ -1,0 +1,3 @@
+.footer__contacts {
+  @apply flex items-center justify-center gap-1;
+}

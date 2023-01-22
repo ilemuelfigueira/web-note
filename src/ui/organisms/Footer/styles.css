@@ -1,0 +1,3 @@
+.footer__container {
+  @apply flex w-full items-center justify-between gap-14 bg-gray2 px-8;
+}

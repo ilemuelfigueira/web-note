@@ -6,6 +6,15 @@ export { default as HeaderLocation } from "./atoms/HeaderLocation";
 export { default as HeaderDivider } from "./atoms/HeaderDivider";
 export { default as HeaderInfo } from "./molecules/HeaderInfo";
 export { default as UserName } from "./atoms/UserName";
-export { default as ProfileAvatar } from "./atoms/ProfileAvatar"; 
+export { default as ProfileAvatar } from "./atoms/ProfileAvatar";
 export { default as ProfileHeader } from "./molecules/ProfileHeader";
 export { default as Header } from "./organisms/Header";
+
+export { default as FooterLegend } from "./atoms/FooterLegend";
+export { default as FooterDivider } from "./atoms/FooterDivider";
+export { default as FooterIcon } from "./atoms/FooterIcon";
+export { default as FooterLink } from "./atoms/FooterLink";
+export { default as FooterLinkIcon } from "./molecules/FooterLinkIcon";
+export { default as FooterContacts } from "./organisms/FooterContacts";
+export { default as FooterInfos } from "./organisms/FooterInfos";
+export { default as Footer } from "./organisms/Footer";

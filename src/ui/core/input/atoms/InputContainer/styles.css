@@ -1,3 +1,0 @@
-.input__container {
-  @apply flex w-full max-w-[400px] items-center justify-start gap-2 overflow-hidden rounded-2xl bg-darkWhite pl-4;
-}

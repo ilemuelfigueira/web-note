@@ -1,0 +1,3 @@
+.footer__infos {
+  @apply flex w-full items-center justify-between;
+}

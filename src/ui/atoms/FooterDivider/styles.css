@@ -1,0 +1,3 @@
+.footer__divider {
+  @apply w-full border-t-2 border-black;
+}
