@@ -2,8 +2,9 @@ import React from "react";
 import { observer } from "mobx-react";
 import { Envelope } from "phosphor-react";
 import { Input } from "../../atoms/Input";
-import { InputContainer } from "../../atoms/InputContainer";
 import { InputIcon } from "../../atoms/InputIcon";
+
+import "./styles.css"
 
 const EmailInput: React.FC<EmailInputProps> = ({
   inputRef,
@@ -12,11 +13,11 @@ const EmailInput: React.FC<EmailInputProps> = ({
   ...props
 }) => {
   return (
-    <InputContainer>
+    <div className="input__container">
       <InputIcon icon={Icon} iconRef={iconRef} />
 
       <Input {...props} type={"text"} inputRef={inputRef} />
-    </InputContainer>
+    </div>
   );
 };
 

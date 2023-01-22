@@ -2,8 +2,9 @@ import React from "react";
 import { observer } from "mobx-react";
 import { Eye, EyeClosed } from "phosphor-react";
 import { Input } from "../../atoms/Input";
-import { InputContainer } from "../../atoms/InputContainer";
 import { InputIcon } from "../../atoms/InputIcon";
+
+import "./styles.css"
 
 const PasswordInput: React.FC<PasswordInputProps> = ({
   inputRef,
@@ -16,7 +17,7 @@ const PasswordInput: React.FC<PasswordInputProps> = ({
   const [show, setShow] = React.useState(false);
 
   return (
-    <InputContainer>
+    <div className="input__container">
       <InputIcon
         icon={show ? OpenIcon: ClosedIcon}
         iconRef={iconRef}
@@ -27,7 +28,7 @@ const PasswordInput: React.FC<PasswordInputProps> = ({
       />
 
       <Input {...props} type={show ? "text" : "password"} inputRef={inputRef} />
-    </InputContainer>
+    </div>
   );
 };
 

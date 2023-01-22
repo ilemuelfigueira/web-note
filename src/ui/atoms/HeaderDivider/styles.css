@@ -1,0 +1,3 @@
+.header__divider {
+  @apply text-4xl before:mx-2 before:text-white before:content-['|'];
+}

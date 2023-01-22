@@ -1,0 +1,1 @@
+interface UserNameProps extends React.HTMLAttributes<HTMLSpanElement> {}

@@ -1,8 +1,9 @@
 import { observer } from "mobx-react";
 import React from "react";
 import { Input } from "../../atoms/Input";
-import { InputContainer } from "../../atoms/InputContainer";
 import { InputIcon } from "../../atoms/InputIcon";
+
+import "./styles.css";
 
 const PasswordInput: React.FC<TextInputProps> = ({
   inputRef,
@@ -12,11 +13,11 @@ const PasswordInput: React.FC<TextInputProps> = ({
   ...props
 }) => {
   return (
-    <InputContainer>
+    <div className="input__container">
       <InputIcon icon={Icon} iconRef={iconRef} onClick={onClickIcon} />
 
       <Input {...props} type={"text"} inputRef={inputRef} />
-    </InputContainer>
+    </div>
   );
 };
 
